@@ -38,6 +38,7 @@ export default class extends Controller {
   async #loadRecords() {
     const url = new URL(this.urlValue);
     url.searchParams.set("page", this.pageValue);
+    console.log('ajaja')
 
     this.fetching = true;
 
