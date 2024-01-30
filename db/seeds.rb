@@ -14,6 +14,14 @@
 
 
 
-18.times do
-  Post.create(title: Faker::Movie.title, body: Faker::Movie.quote)
+# 18.times do
+#   Post.create(title: Faker::Movie.title, body: Faker::Movie.quote)
+# end
+
+# 15.times do
+#   Product.create(name: Faker::Movie.title, category: Faker::Cannabis.category, desc: Faker::Movie.quote)
+# end
+
+15.times do
+  Movie.create(name: Faker::Movie.title, category: Faker::Cannabis.category, desc: Faker::Movie.quote)
 end

@@ -1,3 +1,4 @@
+//formelement_controller.js (stimulus)
 import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="formelement"
@@ -15,7 +16,7 @@ export default class extends Controller {
 }
 
 
-
+//'https://pokeapi.co/api/v2/pokemon?limit=3'
 
 
 // import { Controller } from "@hotwired/stimulus"

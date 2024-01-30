@@ -9,11 +9,17 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
 
   <body>
     <div class="flash-notice"></div>
     <main class="container px-5 mx-auto mt-4">
+    <%= @params.inspect %>
+    app: <br>
+    Last Item[s]<%#= session[:last_item_name]["name"].inspect %><%#= session[:last_item_name]["body"].inspect %><br>
+    Item: <%= @item.inspect  %><br>
+    <%#= session[:current_item] %>
       <%= yield %>
     </main>
   </body>
