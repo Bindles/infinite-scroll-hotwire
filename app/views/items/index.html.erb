@@ -20,16 +20,19 @@ Params[ALL]:
   Params[:action]: 
   <%= params[:action].inspect %> <br>
     Params[q]:
-  <%= params[:q].inspect %> <br>
+  <%= params[:q].inspect %> <br><br>
 
+    Params[myparam]:
+  <%= params[:myparam].inspect %> <br>
+  <%= params %><br>
   <form action="/items">
     <input name="myparam" type="text">
     <button type="submit">Search</button>
   </form>
 
 
-  <%= params[:book] %>
-  <%= params[:book] %>
+  par book<%= params[:book] %> <br>
+  par book<%= params[:book] %> <br>
 <%# form_for(@book) with a few fields generates something like this %>
 <form action="/items">
   <input type="text" name="book[title]" id="book_title">
@@ -44,9 +47,9 @@ Params[ALL]:
 
   <button type="submit">Create</button>
 </form>
-
-  <%= params[:item] %>
-  <%= params[:item] %>
+<br>
+  param :item <%= params[:item].inspect %><br>
+  param :item <%= params[:item] %><br>
 <%# form_for(@book) with a few fields generates something like this %>
 <form action="/items" method="post">
   <input type="text" name="item[name]" id="item_name">
